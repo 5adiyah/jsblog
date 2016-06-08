@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       this.set('addNewPost', true);
     },
 
-    save1FromForm(){
+    save1(){
       var params = {
         title: this.get('title'),
         body: this.get('body'),
