@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         body: this.get('body'),
       };
       this.set('addNewPost', false);
-      this.sendAction('save2FromComponent', params);
+      this.sendAction('save2', params);
     }
   }
 });

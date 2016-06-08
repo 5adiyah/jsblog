@@ -1,7 +1,7 @@
 <ul>
   {{#each model as |post|}}
-    {{post-list post=post destroyPost='destroyPost' update='update'}}
+     {{post-list post=post}}
   {{/each}}
 </ul>
 
-{{post-new save2FromComponent='save3FromRoute'}}
+{{post-new save2="save3"}}
