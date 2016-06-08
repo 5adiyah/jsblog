@@ -1,0 +1,11 @@
+{{#if addNewPost}}
+  <form>
+    <label for="title">Title</label>
+    {{input value=title id="title"}}
+    <label for="body">Post</label>
+    {{input value=body id="body"}}
+    <button {{action 'save1FromForm'}}>Save</button>
+  </form>
+{{else}}
+    <button {{action 'postFormShow'}}>New Post</button>
+{{/if}}
