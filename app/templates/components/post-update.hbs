@@ -1,0 +1,11 @@
+{{#if updateRentalForm}}
+  <form>
+    <label for="title">Title</label>
+    {{input value=title id="title" placeholder=post.title}}
+    <label for="body">Body</label>
+    {{input value=body id="body" placeholder=post.body}}
+    <button {{action 'update' post}}>Save</button>
+  </form>
+{{else}}
+    <button {{action 'updatePostForm'}}>Edit</button>
+{{/if}}
