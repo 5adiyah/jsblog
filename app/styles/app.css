@@ -1,0 +1,71 @@
+body{
+  background: url(bg.jpg) no-repeat center center fixed;
+  -webkit-backgound-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.greybox{
+  width: 90%;
+  height: 900px;
+  margin: 30px auto;
+  background-color: #F6F9FA;
+}
+
+.leftMenu{
+  height: 830px;
+  background-color: #F6F9FA;
+}
+
+.leftMenu h2{
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  color: #404040;
+  font-family: 'Lora', serif;
+}
+
+.rightMenu{
+  height: 830px;
+  background-color: #F6F9FA;
+  padding: 20px;
+  color: #404040;
+}
+
+.textBox{
+  height: 830px;
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.topbar{
+  width: 100%;
+  height: 70px;
+  background-color: #38c9a7;
+}
+
+.icons {
+  color: #fff;
+}
+
+.icons .left{
+  float: left;
+  font-size: 1.2em;
+  line-height: 70px;
+  margin: 0 20px;
+}
+
+.icons .right{
+  float: right;
+  font-size: 1.2em;
+  line-height: 70px;
+  margin: 0 20px;
+}
+
+.littleGuy{
+  line-height: 900px;
+  margin-right: 17px;
+  float: right;
+}
