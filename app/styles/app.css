@@ -6,6 +6,7 @@ body{
   background-size: cover;
 }
 
+
 .greybox{
   width: 90%;
   height: 900px;
@@ -25,7 +26,6 @@ body{
   text-align: center;
   color: #404040;
   font-family: 'Poiret One', cursive;
-  /*font-family: 'Roboto', sans-serif;*/
 }
 
 .rightMenu{
@@ -49,8 +49,12 @@ body{
   /*background-color: #C93838;*/
 }
 
-.icons {
+.icons i{
   color: #fff;
+}
+
+.icons i:hover{
+  color: #333;
 }
 
 .icons .left{
@@ -67,6 +71,32 @@ body{
   margin: 0 20px;
 }
 
+.topbar .icons .lineput{
+  height: 20px;
+  padding: 0;
+  margin-left: 10px;
+  background-color: #38c9a7;
+  border-top: 0 #38c9a7 solid;
+  border-right: 0 #38c9a7 solid;
+  border-left: 0 #38c9a7 solid;
+  border-bottom: 1px #fff solid;
+  border-radius: 0;
+}
+
+.topbar .icons .lineput:active{
+  height: 20px;
+  padding: 0;
+  margin-left: 10px;
+  background-color: #38c9a7;
+  border-top: 0 #38c9a7 solid;
+  border-right: 0 #38c9a7 solid;
+  border-left: 0 #38c9a7 solid;
+  border-bottom: 1px #fff solid;
+  border-radius: 0;
+}
+
+
+
 .littleGuy{
   margin-top: 100px;
   margin-right: 17px;
@@ -80,4 +110,14 @@ body{
 .logo{
   padding-top: 20px;
   width: 37%;
+}
+
+.menulinks i{
+  padding: 50px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.menulinks i:hover{
+  color: #38c9a7;
 }

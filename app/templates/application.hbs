@@ -11,11 +11,11 @@
     <div class="topbar">
       <div class="icons">
         <i class="fa fa-bars left" aria-hidden="true"></i>
-        <i class="fa fa-search left" aria-hidden="true"> _________________</i>
+        <i class="fa fa-search left" type="button" aria-hidden="true"><input type="text" class="lineput"/></i>
 
-        <i class="fa fa-envelope right" aria-hidden="true"></i>
-        <i class="fa fa-user right" aria-hidden="true"></i>
-        <i class="fa fa-home right" aria-hidden="true"></i>
+        {{#link-to 'contact'}}<i class="fa fa-envelope right" aria-hidden="true"></i>{{/link-to}}
+        {{#link-to 'about'}}<i class="fa fa-user right" aria-hidden="true"></i>{{/link-to}}
+        {{#link-to 'index'}}<i class="fa fa-home right" aria-hidden="true"></i>{{/link-to}}
       </div>
     </div>
 
@@ -23,6 +23,14 @@
       <div class="leftMenu three columns">
         <img src="logo.png" class="logo"/>
         <h3>KODEKIT</h3>
+        <div class="menulinks">
+          {{#link-to 'index'}}<i class="fa fa-book" aria-hidden="true"></i>{{/link-to}}<br>
+          {{#link-to 'todo'}}<i class="fa fa-list-ul" aria-hidden="true"></i>{{/link-to}}<br>
+          {{#link-to 'calendar'}}<i class="fa fa-calendar" aria-hidden="true"></i>{{/link-to}}<br>
+          {{#link-to 'codesnip'}}<i class="fa fa-file-code-o" aria-hidden="true"></i>{{/link-to}}<br>
+          {{#link-to 'bookmarks'}}<i class="fa fa-external-link" aria-hidden="true"></i>{{/link-to}}<br>
+        </div>
+
       </div>
 
       <div class="textBox nine columns">
