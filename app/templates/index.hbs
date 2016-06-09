@@ -1,39 +1,7 @@
-<div class="containers">
+<ul>
+  {{#each model as |post|}}
+     {{post-list post=post}}
+  {{/each}}
 
-  <div class="greybox">
-
-    <div class="littleGuy">
-      <i class="fa fa-arrow-right" aria-hidden="true"></i>
-    </div>
-
-    <div class="topbar">
-      <div class="icons">
-        <i class="fa fa-bars left" aria-hidden="true"></i>
-        <i class="fa fa-search left" aria-hidden="true"> _________________</i>
-
-        <i class="fa fa-trash-o right" aria-hidden="true"></i>
-        <i class="fa fa-pencil-square-o right" aria-hidden="true"></i>
-        <i class="fa fa-file-text right" aria-hidden="true"></i>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="leftMenu three columns">
-        <h2>blog</h2>
-      </div>
-
-      <div class="textBox nine columns">
-        <ul>
-          {{#each model as |post|}}
-             {{post-list post=post}}
-          {{/each}}
-
-          {{post-new save2="save3"}}
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
+  {{post-new save2="save3"}}
+</ul>
