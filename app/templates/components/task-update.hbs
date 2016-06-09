@@ -1,17 +1,36 @@
 {{#if updateTaskForm}}
+  <form class="updateForm">
 
-  <form>
     <div class="row">
-      <label class="twelve columns" for="description">Task</label>
-      {{input class="twelve columns" value=description id="description" placeholder=task.description}}
-    </div>
-    <div class="row">
-      <label class="twelve columns" for="category">Category</label>
-      {{input class="twelve columns" value=category id="category" placeholder=task.category}}
+      <span class="one columns">&nbsp;</span>
+      <label class="ten columns" for="description">Task</label>
+      <span class="one columns">&nbsp;</span>
     </div>
 
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      {{input class="ten columns" value=description id="description" placeholder=task.description}}
+      <!-- <span class="one columns">&nbsp;</span> -->
+    </div>
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      <label class="ten columns" for="category">Category</label>
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      {{input class="ten columns" value=category id="category" placeholder=task.category}}
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    <span class="one columns">&nbsp;</span>
     <button {{action 'update' task}}>Save</button>
+
   </form>
+
+
 {{else}}
   <span class="taskIcons">
     <i class="fa fa-pencil" aria-hidden="true" {{action 'updateTaskForm'}}></i>
