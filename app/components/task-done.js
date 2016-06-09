@@ -8,20 +8,14 @@ export default Ember.Component.extend({
     },
 
     markDone(){
-      // debugger;
-      // var params = {
-      //   description: this.get('description'),
-      //   category: this.get('category'),
-      //   complete: true,
-      // };
       var task = this.get('task');
-      console.log(task.get('complete'));
-      // debugger;
       task.set('complete', true);
       task.save();
       console.log(task.get('complete'));
-      this.set('taskDoneForm', false);
-      // this.sendAction('markDone', task, params);
+      // this.set('taskDoneForm', false);
+      $('.pleaseWork').css("text-decoration", "line-through");
     }
+
+
   }
 });
