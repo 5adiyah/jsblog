@@ -1,0 +1,18 @@
+{{#if taskDoneForm}}
+  <form class="markDoneForm">
+
+
+    {{input type="hidden" value=description id="description"}}
+    {{input type="hidden" value=category id="category"}}
+
+
+    {{input type="hidden" value=true id="complete"}}<br>
+    <button {{action 'markDone'}}>Done</button>
+
+  </form>
+{{else}}
+  <span class="checkMark">
+    <i class="fa fa-check-square-o" aria-hidden="true" {{action 'markDone'}}></i>
+  </span>
+
+{{/if}}
