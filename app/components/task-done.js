@@ -9,9 +9,10 @@ export default Ember.Component.extend({
 
     markDone(){
       var task = this.get('task');
+      console.log("before: " + task.get('complete'));
       task.set('complete', true);
       task.save();
-      console.log(task.get('complete'));
+      console.log("after: " + task.get('complete'));
       // this.set('taskDoneForm', false);
       $('.pleaseWork').css("text-decoration", "line-through");
     }
