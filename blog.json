@@ -10,15 +10,15 @@
   }],
 
  "tasks": [{
-    "task": "Task 1",
+    "description": "Task 1",
     "category": "Homework",
     "complete": false
   }, {
-    "task": "Another task",
+    "description": "Another task",
     "category": "School",
     "complete": false
   }, {
-    "task": "New Task",
+    "description": "New Task",
     "category": "Category",
     "complete": false
   }]

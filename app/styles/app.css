@@ -9,13 +9,12 @@ body{
 
 .greybox{
   width: 90%;
-  height: 900px;
   margin: 30px auto;
   background-color: #F6F9FA;
 }
 
 .leftMenu{
-  height: 830px;
+  height: 1200px;
   background-color: #F6F9FA;
   text-align: center;
 }
@@ -29,14 +28,14 @@ body{
 }
 
 .rightMenu{
-  height: 830px;
+  height: 1200px;
   background-color: #F6F9FA;
   padding: 20px;
   color: #404040;
 }
 
 .textBox{
-  height: 830px;
+  height: 1200px;
   width: 300px;
   background-color: #fff;
   padding: 20px;

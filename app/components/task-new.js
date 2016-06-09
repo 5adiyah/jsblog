@@ -9,9 +9,9 @@ export default Ember.Component.extend({
 
     save1(){
       var params = {
-        task: this.get('task'),
+        description: this.get('description'),
         category: this.get('category'),
-        complete: false,
+        complete: this.get("complete") ? this.get('complete') : false,
       };
       this.set('addNewTask', false);
       this.sendAction('save2', params);

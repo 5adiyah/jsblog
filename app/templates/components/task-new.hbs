@@ -1,11 +1,13 @@
 {{#if addNewTask}}
   <form>
-    <label for="title">Task</label>
-    {{input value=task id="task"}}
+    <label for="description">Task</label>
+    {{input value=description id="description"}}
     <label for="category">Category</label>
     {{input value=category id="category"}}
+    <label for="complete" class="checkbox-inline">Done?</label>
+    {{input type="checkbox" checked=complete id="complete"}}<br>
     <button {{action 'save1'}}>Save</button>
   </form>
 {{else}}
-    <button {{action 'taskFormShow'}}></button>
+    <button {{action 'taskFormShow'}}>New Task</button>
 {{/if}}

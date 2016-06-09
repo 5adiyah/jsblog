@@ -9,13 +9,19 @@ export default Ember.Component.extend({
 
     update(task){
       var params = {
-        task: this.get('task'),
+        description: this.get('description'),
         category: this.get('category'),
         complete: false,
       };
 
       this.set('updateTaskForm', false);
       this.sendAction('update', task, params);
+    },
+
+    delete(task) {
+      if (confirm('Are you sure you want to delete this task?')) {
+        this.sendAction('destroyTask', task);
+      }
     }
   }
 });

@@ -1,18 +1,17 @@
 {{#if updateTaskForm}}
   <form>
     <div class="row">
-      <label class="twelve columns" for="task">Task</label>
-      {{input class="twelve columns" value=task id="task" placeholder=task.task}}
+      <label class="twelve columns" for="description">Task</label>
+      {{input class="twelve columns" value=description id="description" placeholder=task.description}}
     </div>
     <div class="row">
       <label class="twelve columns" for="category">Category</label>
-      {{textarea class="twelve columns" value=category id="category" placeholder=task.category}}
+      {{input class="twelve columns" value=category id="category" placeholder=task.category}}
     </div>
 
     <button {{action 'update' task}}>Save</button>
   </form>
 {{else}}
-  <div class="editIcon">
-    <i class="fa fa-pencil-square-o" aria-hidden="true" {{action 'updateTaskForm'}}></i><br>
-  </div>
+  <button {{action 'updateTaskForm'}}>Update Task</button>
+  <button {{action 'delete' task}}>Delete Task</button>
 {{/if}}

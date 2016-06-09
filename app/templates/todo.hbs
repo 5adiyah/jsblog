@@ -1,5 +1,8 @@
 <ul>
   {{#each model as |task|}}
-    <li><strong>{{task.task}}</strong><br>{{task.category}}<br>Complete: {{task.complete}}</li>
+    <li><strong>{{task.description}}</strong><br>{{task.category}}<br>Complete: {{task.complete}}</li>
+    {{task-update task=task update="update" destroyTask="destroyTask"}}
   {{/each}}
+
+  {{task-new save2="save3"}}
 </ul>
