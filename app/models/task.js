@@ -4,5 +4,6 @@ import attr from 'ember-data/attr';
 
 export default Model.extend({
   task: attr(),
-  category: attr()
+  category: attr(),
+  complete: attr('boolean')
 });

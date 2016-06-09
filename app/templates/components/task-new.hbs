@@ -1,0 +1,11 @@
+{{#if addNewTask}}
+  <form>
+    <label for="title">Task</label>
+    {{input value=task id="task"}}
+    <label for="category">Category</label>
+    {{input value=category id="category"}}
+    <button {{action 'save1'}}>Save</button>
+  </form>
+{{else}}
+    <button {{action 'taskFormShow'}}></button>
+{{/if}}

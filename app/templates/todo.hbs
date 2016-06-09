@@ -1,1 +1,5 @@
-{{outlet}}
+<ul>
+  {{#each model as |task|}}
+    <li><strong>{{task.task}}</strong><br>{{task.category}}<br>Complete: {{task.complete}}</li>
+  {{/each}}
+</ul>
