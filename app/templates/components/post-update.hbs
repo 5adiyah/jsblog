@@ -1,11 +1,18 @@
 {{#if updatePostForm}}
   <form>
-    <label for="title">Title</label>
-    {{input value=title id="title" placeholder=post.title}}
-    <label for="body">Body</label>
-    {{input value=body id="body" placeholder=post.body}}
+    <div class="row">
+      <label class="twelve columns" for="title">Title</label>
+      {{input class="twelve columns" value=title id="title" placeholder=post.title}}
+    </div>
+    <div class="row">
+      <label class="twelve columns" for="body">Body</label>
+      {{textarea class="twelve columns" value=body id="body" placeholder=post.body}}
+    </div>
+
     <button {{action 'update' post}}>Save</button>
   </form>
 {{else}}
-    <button {{action 'updatePostForm'}}>Edit</button>
+  <div class="editIcon">
+    <i class="fa fa-pencil-square-o" aria-hidden="true" {{action 'updatePostForm'}}></i><br>
+  </div>
 {{/if}}

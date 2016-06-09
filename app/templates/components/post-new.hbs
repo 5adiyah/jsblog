@@ -7,5 +7,7 @@
     <button {{action 'save1'}}>Save</button>
   </form>
 {{else}}
-    <button {{action 'postFormShow'}}>New Post</button>
+  <div class="newPostIcon">
+    <i class="fa fa-file-text" aria-hidden="true" {{action 'postFormShow'}}></i><br>
+  </div>
 {{/if}}

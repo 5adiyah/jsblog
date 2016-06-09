@@ -96,15 +96,48 @@ body{
 }
 
 
-
-.littleGuy{
-  margin-top: 100px;
-  margin-right: 17px;
+.newPostIcon{
+  margin-top: -20px;
+  margin-right: -52px;
   float: right;
 }
 
-.littleGuy i {
-  padding: 50px 0;
+.newPostIcon i {
+  font-size: 1.2em;
+  color: #38c9a7;
+}
+
+.editIcon{
+  margin-top: -135px;
+  margin-right: -54px;
+  float: right;
+}
+
+.editIcon i{
+  font-size: 1.2em;
+  color: #38c9a7;
+}
+
+.deleteIcon{
+  margin-top: -80px;
+  margin-right: -51px;
+  float: right;
+}
+
+.deleteIcon i{
+  font-size: 1.2em;
+  color: #38c9a7;
+}
+
+.backIcon{
+  margin-top: -25px;
+  margin-right: -52px;
+  float: right;
+}
+
+.backIcon i{
+  font-size: 1.2em;
+  color: #38c9a7;
 }
 
 .logo{

@@ -11,5 +11,7 @@ export default Ember.Route.extend({
       newPost.save();
       this.transitionTo('index');
     }
-  }
+  },
+
+
 });

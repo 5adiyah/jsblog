@@ -2,5 +2,7 @@
 <ul>
   {{post-detail post=model destroyPost="destroyPost"}}
   {{post-update post=model update="update"}}
-  <button>{{#link-to 'index'}} Go Back {{/link-to}}</button>
+  <div class="backIcon">
+    {{#link-to 'index'}}<i class="fa fa-arrow-left" aria-hidden="true"></i>{{/link-to}}
+  </div>
 </ul>
