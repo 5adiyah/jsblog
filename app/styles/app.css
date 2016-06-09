@@ -153,3 +153,37 @@ body{
 .menulinks i:hover{
   color: #38c9a7;
 }
+
+.taskDescription{
+  background-color: #f1fbf9;
+  margin: 10px 0 0 -15px;;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+.taskRow{
+  padding: 10px;
+  margin-left: 35px;
+}
+
+.taskOptions{
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.taskOptions i {
+  color: #333;
+  font-size: 1.0em;
+  padding-left: 3px;
+}
+
+.taskOptions i:hover {
+  color: #38c9a7;
+}
+
+.newButton{
+  text-align: center;
+  margin-left: -18px;
+}

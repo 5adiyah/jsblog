@@ -1,4 +1,5 @@
 {{#if updateTaskForm}}
+
   <form>
     <div class="row">
       <label class="twelve columns" for="description">Task</label>
@@ -12,6 +13,9 @@
     <button {{action 'update' task}}>Save</button>
   </form>
 {{else}}
-  <button {{action 'updateTaskForm'}}>Update Task</button>
-  <button {{action 'delete' task}}>Delete Task</button>
+  <span class="taskIcons">
+    <i class="fa fa-pencil" aria-hidden="true" {{action 'updateTaskForm'}}></i>
+    <i class="fa fa-ban" aria-hidden="true" {{action 'delete' task}}></i>
+  </span>
+
 {{/if}}

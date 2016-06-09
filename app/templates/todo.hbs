@@ -1,8 +1,17 @@
-<ul>
+<div class="taskList">
   {{#each model as |task|}}
-    <li><strong>{{task.description}}</strong><br>{{task.category}}<br>Complete: {{task.complete}}</li>
-    {{task-update task=task update="update" destroyTask="destroyTask"}}
+    <div class="row taskRow">
+      <div class="taskOptions one columns">
+        <input type="checkbox" id="complete" class="checkbox"/>
+      </div>
+      <div class="taskDescription ten columns">
+        <p>{{task.description}}</p>
+      </div>
+      <div class="taskOptions one columns">
+        {{task-update task=task update="update" destroyTask="destroyTask"}}
+      </div>
+    </div>
   {{/each}}
+</div>
 
-  {{task-new save2="save3"}}
-</ul>
+{{task-new save2="save3"}}

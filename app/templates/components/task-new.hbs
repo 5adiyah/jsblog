@@ -1,13 +1,38 @@
 {{#if addNewTask}}
-  <form>
-    <label for="description">Task</label>
-    {{input value=description id="description"}}
-    <label for="category">Category</label>
-    {{input value=category id="category"}}
-    <label for="complete" class="checkbox-inline">Done?</label>
-    {{input type="checkbox" checked=complete id="complete"}}<br>
+  <form class="newTaskForm">
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      <label class="ten columns" for="description">Task</label>
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      {{input class="ten columns" value=description id="description"}}
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      <label class="ten columns" for="category">Category</label>
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    <div class="row">
+      <span class="one columns">&nbsp;</span>
+      {{input class="ten columns" value=category id="category"}}
+      <span class="one columns">&nbsp;</span>
+    </div>
+
+    {{input type="hidden" value=false id="complete"}}<br>
+    <span class="one columns">&nbsp;</span>
     <button {{action 'save1'}}>Save</button>
+
   </form>
 {{else}}
-    <button {{action 'taskFormShow'}}>New Task</button>
+  <div class="row">
+    <span class="nine columns">&nbsp;</span>
+    <button {{action 'taskFormShow'}} class="newButton two columns">New</button>
+  </div>
 {{/if}}
